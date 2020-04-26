@@ -3,52 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="fonts/ptsans.woff" rel="stylesheet">
+    <link href="fonts/ptsans.woff2" rel="stylesheet">
+    <link href="fonts/ptsansbold.woff" rel="stylesheet">
+    <link href="fonts/ptsans.woff2" rel="stylesheet">
   </head>
-  <body>  
+  <body class="main">  
     <div class="main-wrap">
       
       <header class="main-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href=""><img class="main-header__logo" src="https://via.placeholder.com/104x150" alt="Логотип Sedona" width="104" height="84"></a></li>
-            <li class="site-list__item site-list__item--active"><a class="site-list__link">главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="">фото и видео</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="">форма отзыва</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="">html academy</a></li>
+          <button class="main-nav__toggle main-nav__toggle--close"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
           </ul>
         </nav>
-        <div class="main-header__section-triangle section-triangle"></div>
+        <div class="main-header__logo"><a><img src="img/logo-sedona-mobile.svg" width="102" height="84"></a></div>
+        <div class="main-header__btn"><button class="main-nav__toggle"></button></div>
       </header>
       
       <main class="photo-main">
+        
+        <section class="main-bg main-bg--form">
+          <div class="main-bg__img main-bg__img--form"><img src="img/text-sedona.svg" width="230" height="40"></div>
+          <div class="main-bg__triangle triangle"></div>
+        </section>
+        
         <section class="slogan">
           <h2 class="slogan__header">Фото и видео</h2>
-          <p class="slogan__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="slogan__text slogan__text--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </section>
         
         <section class="gallery">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img class="gallery__item-fon" src="https://via.placeholder.com/150x150" width="280" height="280">
+              <img class="gallery__item-fon" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280">
               <h3 class="gallery__item-header">неродные просторы</h3>
               <p class="gallery__item-author" >Автор фото: Борис</p>
               <button class="gallery__item-btn">1350</button>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-fon" src="https://via.placeholder.com/150x150" width="280" height="280">
+              <img class="gallery__item-fon" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280">
               <h3 class="gallery__item-header">Местная растительность</h3>
               <p class="gallery__item-author" >Автор фото: Борис</p>
               <button class="gallery__item-btn">143</button>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-fon" src="https://via.placeholder.com/150x150" width="280" height="280">
+              <img class="gallery__item-fon" src="img/photo-roads-mobile@1x.jpg" width="280" height="280">
               <h3 class="gallery__item-header">Дорога на север</h3>
               <p class="gallery__item-author" >Автор фото: Петр</p>
               <button class="gallery__item-btn">96</button>
             </li>
             <li class="gallery__item">
-              <img class="gallery__item-fon" src="https://via.placeholder.com/150x150" width="280" height="280">
+              <img class="gallery__item-fon" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280">
               <h3 class="gallery__item-header">Мост дьявола</h3>
               <p class="gallery__item-author" >Автор фото: Антон</p>
               <button class="gallery__item-btn">254</button>
@@ -57,24 +68,24 @@
         </section>
         
         <section class="video">
-          <h2 class="video__header">Все еще сомневаетесь?</h2>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <h2 class="slogan__header">Все еще сомневаетесь?</h2>
+          <p class="slogan__text slogan__text--video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video__link"></div>
         </section>
       </main>
       
-      <footer class="page-footer">
-        <div class="page-footer__contacts"><a href=""><p>#visitSEDONA</p></a></div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item"><a class="social-link social-link--twit" href="">twitter</a></li>
-            <li class="social__item"><a class="social-link social-link--fb" href="">facebook</a></li>
-            <li class="social__item"><a class="social-link social-link--youtube" href="">youtube</a></li>
+      <footer class="footer">
+        <div class="footer__contacts"><a class="footer__contacts-link" href=""><p class="footer__contacts-text">#visitSEDONA</p></a></div>
+        <div class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item"><a class="footer__social-link footer__social-link--twit" href=""></a></li>
+            <li class="footer__social-item"><a class="footer__social-link footer__social-link--fb" href=""></a></li>
+            <li class="footer__social-item"><a class="footer__social-link footer__social-link--youtube" href=""></a></li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">разработано</p>
-          <a class="copyright__link" href=""></a>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">разработано</p>
+          <a class="footer__social-link footer__copyright-link" href=""></a>
         </div>
       </footer>
 
