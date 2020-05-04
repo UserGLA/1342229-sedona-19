@@ -1,6 +1,5 @@
 .slogan{
   height: 240px;
-  width: 320px;
   text-align: center;
   position: relative;
 }
@@ -34,4 +33,32 @@
 
 .slogan__text--video{
   width: 290px;
+}
+
+@media (min-width: @tablet_width){
+  
+  .slogan__triangle{
+    display: none;
+  }
+  
+  .slogan{
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .slogan__header{
+    font-size: 21px;
+  }
+  
+  .slogan__header--photo{
+    font-size: 30px;
+  }
+  
+  .slogan__text--photo{
+    width: 440px;
+  }
+  
+  .slogan__text--video{
+    width: 415px;
+  }
 }

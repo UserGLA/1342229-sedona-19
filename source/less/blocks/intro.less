@@ -40,3 +40,46 @@
 .intro__text{
   margin: 0;  
 }
+
+@media (min-width: @tablet_width){
+  .intro__list{
+    display: flex;
+    padding: 0;
+    padding-top: 135px;
+    padding-bottom: 68px;
+    
+  }
+  
+  .intro__head{
+    &::before{
+      top: -80px;
+      left: 91px;
+      background-size: auto;
+    }
+  }
+  .intro__item{
+      text-align: center;
+    }
+  .intro__item:nth-child(2){
+      order: 3;
+    }
+  .intro__text{
+    padding: 0 38px;
+  }
+  
+  .advantages__description--bridge{
+    order: 2;
+  }
+  
+}
+
+@media (min-width: @desktop_width){
+  .intro__head{
+    &::before{
+      left: 180px;
+    }
+  }
+  
+}
+
+

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,10 +18,10 @@
             <li class="main-nav__item"><a class="main-nav__link" href="">фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
-          </ul>
-        </nav>
+          </ul>       
         <div class="main-header__logo"><a><img src="img/logo-sedona-mobile.svg" width="102" height="84"></a></div>
-        <div class="main-header__btn"><button class="main-nav__toggle"></button></div>
+        <div class="main-header__btn"><button class="main-nav__toggle"></button></div>          
+        </nav>
       </header>
       
       <main class="form-main">
@@ -31,7 +32,7 @@
         </section>
         
         <section class="slogan slogan--form">
-          <h2 class="slogan__header">Оставьте свой отзыв</h2>
+          <h2 class="slogan__header slogan__header--photo">Оставьте свой отзыв</h2>
           <p class="slogan__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         
@@ -81,10 +82,27 @@
             </ul>
             <button class="button feedback__button">ОТПРАВИТЬ ОТЗЫВ</button>
           </section>
+                    
+          <div class="feedback__popup visually_hidden">
+            <div class="feedback_popup-wrap">
+              <h2 class="feedback__popup-head">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+              <p class="feedback__popup-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+              <button class="button feedback__popup-button">OK</button>
+            </div>
+          </div>
+          
+          <div class="feedback__popup feedback__popup--on visually_hidden">
+            <div class="feedback_popup-wrap">
+              <h2 class="feedback__popup-head">Ваш отзыв отправлен!</h2>
+              <p class="feedback__popup-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+              <button class="button feedback__popup-button feedback__popup-button--on">ЗАKРЫТЬ ОКНО</button>
+            </div>
+          </div>
+          
         </form>
       </main>
       <footer class="footer">
-        <div class="footer__contacts"><a class="footer__contacts-link" href=""><p class="footer__contacts-text">#visitSEDONA</p></a></div>
+        <div class="footer__contacts"><a class="footer__contacts-link" href="">#visitSEDONA</a></div>
         <div class="footer__social">
           <ul class="footer__social-list">
             <li class="footer__social-item"><a class="footer__social-link footer__social-link--twit" href=""></a></li>
