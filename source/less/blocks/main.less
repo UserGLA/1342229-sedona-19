@@ -10,7 +10,9 @@
 }
 
 .main-wrap{
-  width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.8);
 }
 
 .main-header{
@@ -27,9 +29,6 @@
 }
 
 .main-nav__list{
-  display: flex;
-  flex-direction: column;
-  width: 320px;
   margin: 0;
   padding: 0;
 }
@@ -104,6 +103,18 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+
+  &::after{
+    content: '';
+    height: 26px;
+    width: 320px;
+    background-image: url(../../img/bg-intro-triangle-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;  
+    top: 100%;
+    transform: translateY(-100%);
+  }
 }
 
 .main-bg__img{
@@ -113,14 +124,11 @@
   width: 280px;
 }
 
-.main-bg__triangle{
-  background-image: url(../../img/bg-intro-triangle-mobile.svg);
-  background-repeat: no-repeat;
-}
-
 .main-bg--form{
   min-height: 160px;
   background-position: bottom;
+  
+  
 }
 
 .main-bg__img--form{
@@ -137,12 +145,13 @@
 @media (min-width: @tablet_width){
   
   .main-wrap{
-    width: 768px;
+    max-width: 768px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.8);
   }
   
   .main-nav__list{
-    width: 100%;
-    flex-direction: row;
+    display: flex;
   }
   
   .main-nav{
@@ -203,17 +212,19 @@
     height: 520px;
     background-position: top;
     width: 100%;
+    
+    &::after{
+      background-image: url(../../img/bg-intro-triangle-tablet.svg);
+      width: 768px;
+      height: 57px;
+    }
   }
   
   .main-bg__img-link{
     width: 460px;
     padding-top: 77px;
   }
-  
-  .main-bg__triangle{
-    background-image: url(../../img/bg-intro-triangle-tablet.svg);
-  }
-  
+    
   .main-bg--form{
     height: 290px;
     background-position: bottom;
@@ -228,7 +239,7 @@
   }
   .main-wrap{
     background-color: white;
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.8);
   }
@@ -259,10 +270,13 @@
     height: 520px;
     background-position: top;
     width: 100%;
-  }
-  
-  .main-bg__triangle{
-    background-image: url(../../img/bg-intro-triangle-desktop.svg);
+    
+    &::after{
+      background-image: url(../../img/bg-intro-triangle-desktop.svg);
+      width: 1280px;
+      height: 57px;
+      left: 40px;
+    }
   }
   
   .main-bg--form{
@@ -275,6 +289,7 @@
     height: auto;
   }
 }
+
 
 
 
