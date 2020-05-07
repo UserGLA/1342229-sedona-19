@@ -15,21 +15,9 @@
   display: block;
 }
 
-.gallery__item-fon--tablet,
-.gallery__item-fon--desktop{
-  display: none;
-}
-
 @media (min-width: @tablet_width){
   
-  .gallery__item-fon,
-  .gallery__item-fon--desktop{
-    display: none;
-  }
-  
-  .gallery__item-fon--tablet{
-    display: block;
-  }
+ 
   
   .gallery__list{
     display: flex;
@@ -41,6 +29,10 @@
   .gallery__item{
     border: none; 
     padding: 0;
+  }
+  
+  .gallery__item:first-child{
+    width: 100%; 
   }
   
   .gallery-author{
@@ -70,19 +62,13 @@
 
 @media (min-width: @desktop_width){
   
-  .gallery__item-fon,
-  .gallery__item-fon--tablet{
-    display: none;
-  }
   
-  .gallery__item-fon--desktop{
-    display: block;
-  }
+  
   .gallery__item{
-    max-width: 400px;
+    width: 33%;
   }
   .gallery__item:first-child{
-    max-width: 100%;
+    width: 100%;
   }
   
   .gallery__list{

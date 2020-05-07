@@ -23,11 +23,6 @@
   line-height: 21px;
 }
 
-.advantages__img--desktop,
-.advantages__img--tablet{
-  display: none;
-}
-
 .advantages__img-link{
   display: block;
 }
@@ -50,17 +45,12 @@
 
 
 @media (min-width: @tablet_width){
-  .advantages__img--desktop, 
-  .advantages__img{
-    display: none;
-  }
   
   .advantages{
     display: flex;
   }
   
-  .advantages__img--tablet{
-    display: block;
+  .advantages__img{
     width: 67%;
   }
   
@@ -82,6 +72,10 @@
     border: none;
   }
   
+  .advantages__description--bridge{
+    order: 2;
+  }
+  
   .advantages__head{
     font-size: 21px;
   }
@@ -90,14 +84,6 @@
 
 
 @media (min-width: @desktop_width){
-  .advantages__img--tablet, 
-  .advantages__img{
-    display: none;
-  }
-  
-  .advantages__img--desktop{
-    display: block;
-  }
   
   .advantages__img-link{
     height: 260px;
