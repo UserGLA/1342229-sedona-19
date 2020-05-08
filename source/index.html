@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,30 +11,32 @@
       
       <header class="main-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--close"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
-          </ul>
+          </ul>       
+        <div class="main-header__logo">
+          <a>
+            <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84">
+            <img class="main-header__logo-link--desktop" src="img/logo-sedona-desktop.svg" width="187" height="97">
+          </a>
+          </div>
+        <div class="main-header__btn"><button class="main-nav__toggle"></button></div>          
         </nav>
-        <div class="main-header__logo"><a><img src="img/logo-sedona-mobile.svg" width="102" height="84"></a></div>
-        <div class="main-header__btn"><button class="main-nav__toggle"></button></div>
       </header>
     
       <main>
       
         
         <section class="main-bg">
-          <div class="main-bg__img"><img src="img/main-bg__img.png" width="280" height="214"></div>
-          <div class="main-bg__triangle triangle"></div>
+          <div class="main-bg__img"><img class="main-bg__img-link" src="img/text-sedona-index.svg" width="460" height="351"></div>
         </section>
         
         <section class="slogan">
           <h2 class="slogan__header">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-          <p class="slogan__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          <div class="slogan__triangle triangle"></div>
+          <p class="slogan__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
         </section>
       
         <section class="advantages">
@@ -47,7 +50,7 @@
         
         <section class="intro">
           <ul class="intro__list">
-            <li class="intro__item"><!---->
+            <li class="intro__item">
               <h2 class="intro__head intro__head--house">Жилье</h2>
               <p class="intro__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
@@ -63,7 +66,7 @@
         </section>
       
         <section class="advantages">
-          <div class="advantages__description">
+          <div class="advantages__description advantages__description--bridge">
             <h2 class="advantages__head">ТАМ ЕСТЬ Мост дьявола</h2>
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -101,7 +104,7 @@
       
       </main>
       <footer class="footer">
-        <div class="footer__contacts"><a class="footer__contacts-link" href=""><p class="footer__contacts-text">#visitSEDONA</p></a></div>
+        <div class="footer__contacts"><a class="footer__contacts-link" href="">#visitSEDONA</a></div>
         <div class="footer__social">
           <ul class="footer__social-list">
             <li class="footer__social-item"><a class="footer__social-link footer__social-link--twit" href=""></a></li>

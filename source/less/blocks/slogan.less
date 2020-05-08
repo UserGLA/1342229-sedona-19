@@ -1,8 +1,18 @@
 .slogan{
   height: 240px;
-  width: 320px;
   text-align: center;
   position: relative;
+  
+  &::after{
+    content: '';
+    height: 26px;
+    width: 320px;
+    background-image: url(../../img/bg-intro-triangle-mobile-blue.svg);
+    position: absolute;
+    left: 0;  
+    top: 100%;
+    transform: translateY(-100%);
+  }
 }
 
 .slogan__header{
@@ -19,14 +29,17 @@
 
 }
 
-.slogan__triangle{
-  background-image: url(..//..//img/bg-intro-triangle-mobile-blue.svg);
-  background-repeat: no-repeat;
-}
-
 .slogan--form{
   border-bottom: 1px solid #e5e5e5;
+  
+  &::after{
+    display: none;
+  }
 }
+
+.slogan--photo::after{
+    display: none;
+  }
 
 .slogan__text--photo{
   width: 295px;
@@ -34,4 +47,34 @@
 
 .slogan__text--video{
   width: 290px;
+}
+
+@media (min-width: @tablet_width){
+  
+   
+  .slogan{
+    width: 500px;
+    margin: 0 auto;
+    
+    &::after{
+      display: none;
+    }
+  }
+  
+  
+  .slogan__header{
+    font-size: 21px;
+  }
+  
+  .slogan__header--photo{
+    font-size: 30px;
+  }
+  
+  .slogan__text--photo{
+    width: 440px;
+  }
+  
+  .slogan__text--video{
+    width: 415px;
+  }
 }
