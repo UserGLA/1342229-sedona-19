@@ -1,7 +1,8 @@
 .slogan{
-  height: 240px;
+  padding: 0 20px;
   text-align: center;
   position: relative;
+  padding-bottom: 44px;
   
   &::after{
     content: '';
@@ -15,21 +16,32 @@
   }
 }
 
+.slogan__text--none{
+  display: none;
+}
+
 .slogan__header{
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  padding-top: 45px;
-  padding-bottom: 40px;
-  margin: 0;
+  padding-top: 39px;
+  padding-bottom: 29px;
+  margin: 0 auto;
+  width: 265px;
 }
+
+.slogan__header--form{
+    padding-top: 36px;
+    padding-bottom: 26px;
+  }
 
 .slogan__text{
   margin: 0 auto;
-
+  line-height: 24px;
 }
 
 .slogan--form{
+  padding-bottom: 16px;
   border-bottom: 1px solid #e5e5e5;
   
   &::after{
@@ -37,16 +49,24 @@
   }
 }
 
-.slogan--photo::after{
+.slogan--photo{
+  padding-bottom: 27px;
+  
+  &::after{
     display: none;
   }
-
+}
 .slogan__text--photo{
-  width: 295px;
+  width: 270px;
 }
 
 .slogan__text--video{
-  width: 290px;
+  width: 265px;
+}
+
+.slogan__header--photo{
+  padding-top: 36px;
+  padding-bottom: 26px;
 }
 
 @media (min-width: @tablet_width){
@@ -55,26 +75,78 @@
   .slogan{
     width: 500px;
     margin: 0 auto;
+    padding-bottom: 52px;
     
     &::after{
       display: none;
     }
   }
   
-  
-  .slogan__header{
-    font-size: 21px;
+  .slogan__text--none{
+    display: block;
   }
   
+  .slogan--form{
+    border-bottom: none;
+    padding-bottom: 77px;
+  }
+  .slogan__header{
+    font-size: 21px;
+    width: 450px;
+    padding-top: 50px;
+  }
+  
+  .slogan__header--form{
+    font-size: 30px;
+    padding-top: 79px;
+  }
+    
   .slogan__header--photo{
     font-size: 30px;
+    padding-top: 75px;
+    padding-bottom: 32px;
   }
   
   .slogan__text--photo{
     width: 440px;
   }
   
+  .slogan--photo{
+    padding-bottom: 67px;
+  }
+  
   .slogan__text--video{
     width: 415px;
+  }
+  
+  .slogan__header--photo-second{
+    padding-top: 65px;
+    padding-bottom: 31px;
+  }
+  
+  
+}
+
+@media (min-width: @desktop_width){
+  
+  .slogan--photo{
+    padding-bottom: 71px;
+  }
+
+  .slogan__header--photo{
+    padding-top: 113px;
+  }
+  
+  .slogan--form{
+    padding-bottom: 62px;
+  }
+  
+  .slogan__header--form{
+    font-size: 30px;
+    padding-top: 117px;
+  }
+  
+  .slogan__header--photo-second{
+    padding-top: 72px;
   }
 }
