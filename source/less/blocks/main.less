@@ -20,8 +20,8 @@
 }
 
 .main-header__btn{
-  padding: 15px;
-  padding-left: 282px;
+  padding: 14px;
+  padding-left: 278px;
 }
 
 .main-nav{
@@ -35,7 +35,7 @@
 
 .main-nav__item{
   list-style: none;
-  height: 55px;
+  height: 54px;
   background-color: @color-bl;
   color: white;
   text-align: center;
@@ -56,7 +56,8 @@
   color: white;
   text-decoration: none;
   font-size: 18px;
-  line-height: 50px;
+  line-height: 55px;
+  font-weight: bold;
 }
 
 .main-nav__link:active{
@@ -122,16 +123,28 @@
 }
 .main-bg__img-link{
   width: 280px;
+  padding-top: 20px;
+}
+
+.main-bg__img-link--form{
+  padding-top: 0px;
 }
 
 .main-bg--form{
   min-height: 160px;
   background-position: bottom;
-  
-  
+}
+
+.main-bg--photo{
+  min-height: 160px;
+  background-position: bottom;
 }
 
 .main-bg__img--form{
+  padding-top: 50px;
+}
+
+.main-bg__img--photo{
   padding-top: 50px;
 }
 
@@ -150,12 +163,17 @@
     box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.8);
   }
   
+  .form-main{
+    padding-bottom: 24px;
+  }
+  
   .main-nav__list{
     display: flex;
   }
   
   .main-nav{
-    padding: 0 50px;
+    padding-right: 27px;
+    padding-left: 50px;
   }
   
   .main-nav__item{  
@@ -164,7 +182,7 @@
   }
   
   .main-nav__item:first-child{
-    padding-right: 77px;
+    padding-right: 76px;
   }
   
   .main-nav__item:nth-child(3){
@@ -172,7 +190,7 @@
   }
   
   .main-nav__item:last-child{
-    padding-left: 50px;
+    padding-left: 51px;
   }
   
   .main-nav__item:hover{
@@ -219,15 +237,36 @@
     }
   }
   
+  .main-bg__img{
+    padding-top: 33px;
+  }
   .main-bg__img-link{
     width: 460px;
-    padding-top: 77px;
+    height: auto;
+    padding-top: 46px;
   }
-    
+      
   .main-bg--form{
     height: 290px;
     background-position: bottom;
   }
+  
+  .main-bg__img-link--form{
+    padding-top: 63px;
+  }
+  
+  .main-bg--photo{
+    height: 293px;
+    background-position: bottom;
+  }
+  
+  .main-bg__img--photo{
+    padding-top: 34px
+  }
+  
+
+  
+  
     
 }
 
@@ -238,9 +277,13 @@
   }
   .main-wrap{
     background-color: white;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.8);
+  }
+  
+  .form-main{
+    padding-bottom: 0px;
   }
   
   .main-nav{
@@ -249,11 +292,11 @@
   }
   
   .main-nav__item:first-child{
-    padding-right: 160px;
+    padding-right: 163px;
   }
   
   .main-nav__item:last-child{
-    padding-left: 135px;
+    padding-left: 140px;
   }
   
   .main-header__logo-link--desktop{
@@ -286,6 +329,16 @@
   .main-bg__img-link{
     width: 460px;
     height: auto;
+    padding-top: 48px;
+  }
+  
+  .main-bg__img-link--form{
+    padding-top: 71px;
+  }
+  
+  .main-bg--photo{
+    height: 301px;
+    background-position: bottom;
   }
 }
 

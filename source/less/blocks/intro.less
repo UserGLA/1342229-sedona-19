@@ -1,16 +1,28 @@
 .intro__list{
   list-style: none;
   margin: 0;
-  padding-bottom: 45px;
-  padding-left: 70px;
+  padding-bottom: 5px;
+  padding-left: 68px;
+  padding-top: 41px;
+  position: relative;
 }
 
 .intro__head{
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 25px;
+  font-size: 18px;
+  padding-bottom: 16px;
+  position: relative;
+  }
+
+.intro__item{
+  height: 92px;
+  padding-bottom: 39px;
   position: relative;
   
+  &:nth-child(2){
+    padding-bottom: 20px;
+  }
+
   &::before{
     width: 80px;
     height: 75px;
@@ -19,53 +31,77 @@
     background-size: 39px;
     content: "";
     position: absolute; 
-    left: -75px;
-    top: 10px;
-    
+    left: -71px;
+    top: -30px;
   }
 }
 
-.intro__head--house::before{
-  background-image: url(..//..//img/icon-house-blue.svg);
+.intro__item:first-child::before{
+  background-image: url(../../img/icon-house-blue.svg);
+  
 }
 
-.intro__head--souvenir::before{
-  background-image: url(..//..//img/icon-gift-blue.svg);
+.intro__item:nth-child(2)::before{
+  background-image: url(../../img/icon-gift-blue.svg);
+  background-size: 32px;
 }
 
-.intro__head--food::before{
-  background-image: url(..//..//img/icon-burger-blue.svg);
+.intro__item:last-child::before{
+  background-image: url(../../img/icon-burger-blue.svg);
 }
 
 .intro__text{
   margin: 0;  
+  width: 230px;
+}
+
+.intro__text-transfer{
+  display: none;
 }
 
 @media (min-width: @tablet_width){
   .intro__list{
     display: flex;
     padding: 0;
-    padding-top: 135px;
-    padding-bottom: 68px;
-    
+    padding-top: 163px;
+    padding-bottom: 38px;
+    margin-left: 48px;
+    margin-right: 47px;
+    justify-content: space-between;
   }
   
   .intro__head{
-    &::before{
-      top: -80px;
-      left: 91px;
-      background-size: auto;
-    }
+    font-size: 21px;
+    padding-bottom: 23px;
   }
+  
   .intro__item{
-      text-align: center;
-    }
-  .intro__item:nth-child(2){
+    width: 24%;
+    text-align: center;
+    
+    &:nth-child(2){
       order: 3;
+      
+      &::before{
+        background-size: 77%;
+      }
     }
-  .intro__text{
-    padding: 0 38px;
+    
+    &:last-child{
+      width: 23%;
+    }
+    
+    &::before{
+      left: 50%;
+      transform: translateX(-50%);
+      top: -104px;
+      background-size: 100%;
+    }
   }
+    
+  .intro__text{
+     width: auto;
+    }
   
 }
 
@@ -74,6 +110,21 @@
     &::before{
       left: 180px;
     }
+  }
+  
+  .intro__list{
+    margin: 0px 71px;
+  }
+  
+  .intro__item{
+    
+    &:last-child{
+      width: 28%;
+    }
+  }
+  
+  .intro__text-transfer{
+    display: block;
   }
   
 }
