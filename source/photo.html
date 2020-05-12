@@ -12,7 +12,7 @@
       <header class="main-header">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
@@ -84,7 +84,17 @@
         <section class="video">
           <h2 class="slogan__header slogan__header--photo slogan__header--photo-second">Все еще сомневаетесь?</h2>
           <p class="slogan__text slogan__text--video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <div class="video__link"></div>
+          <div class="video__img-wrap">
+            <img class="video__img" src="img/video-mobile@1x.jpg" width="320" height="201">
+          </div>
+          <div class="video__wrap">
+            <ul class="video__list">
+              <li class="video__item"><button class="video__btn video__btn--progress"></button><span class="video__btn-line"></span></li>
+              <li class="video__item"><button class="video__btn video__btn--replay"></button></li>
+              <li class="video__item"><button class="video__btn video__btn--sub"></button></li>
+              <li class="video__item"><button class="video__btn video__btn--full"></button></li>              
+            </ul>
+          </div>
         </section>
       </main>
       
