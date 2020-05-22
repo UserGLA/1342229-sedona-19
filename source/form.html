@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossoriging="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossoriging="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
    <body class="main">
@@ -24,7 +26,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84">
+              <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
             </picture>
             
           </a>
@@ -33,10 +35,10 @@
         </nav>
       </header>
       
-      <main class="form-main">
+      <main class="main__form">
         
         <section class="main-bg main-bg--form">
-          <div class="main-bg__img main-bg__img--form"><img class="main-bg__img-link main-bg__img-link--form" src="img/text-sedona.svg" width="230" height="40"></div>
+          <div class="main-bg__img main-bg__img--form"><img class="main-bg__img-link main-bg__img-link--form" src="img/text-sedona.svg" width="230" height="40" alt="Седона"></div>
         </section>
         
         <section class="slogan slogan--form">
@@ -68,13 +70,13 @@
                 <fieldset class="feedback__box">
                   <ul class="feedback__impression-list">
                     <li class="feedback__impression-item">
-                      <label class="feedback__impression-label"><input class="feedback__impression-input visually_hidden" type="radio"><span class="feedback__radiobox"></span>Скорее положительное</label>
+                      <label class="feedback__impression-label"><input class="feedback__impression-input visually_hidden" type="radio" name="impression"><span class="feedback__radiobox"></span>Скорее положительное</label>
                     </li>
                     <li class="feedback__impression-item">
-                      <label class="feedback__impression-label"><input class="feedback__impression-input visually_hidden" type="radio"><span class="feedback__radiobox"></span>Скорее отрицательное</label>
+                      <label class="feedback__impression-label"><input class="feedback__impression-input visually_hidden" type="radio" name="impression"><span class="feedback__radiobox"></span>Скорее отрицательное</label>
                     </li>
                     <li class="feedback__impression-item">
-                      <label class="feedback__impression-label"><input class="feedback__impression-input visually_hidden" type="radio"><span class="feedback__radiobox"></span>Затрудняюсь ответить</label>
+                      <label class="feedback__impression-label"><input class="feedback__impression-input visually_hidden" type="radio" name="impression"><span class="feedback__radiobox"></span>Затрудняюсь ответить</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -112,7 +114,7 @@
               </li>
               <li class="feedback__item">
                 <h2 class="feedback__item-head feedback__item-head--emotion">Опишите свои эмоции:</h2>
-                <label class="feedback__emotion-label"><input class="feedback__emotion-input"></label>
+                <label class="feedback__emotion-label"><input class="feedback__emotion-input" type="text"></label>
               </li>
             </ul>
             <button class="button feedback__button">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -129,8 +131,10 @@
           <div class="feedback__popup feedback__popup--on visually_hidden">
             <div class="feedback_popup-wrap">
               <h2 class="feedback__popup-head">Ваш отзыв отправлен!</h2>
-              <p class="feedback__popup-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-              <button class="button feedback__popup-button feedback__popup-button--on">ЗАKРЫТЬ ОКНО</button>
+              <p class="feedback__popup-text feedback__popup-text--on">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+              <div class="feedback__button-wrap">
+                <button class="button feedback__popup-button feedback__popup-button--on">ЗАKРЫТЬ ОКНО</button>
+              </div>
             </div>
           </div>
           
@@ -147,7 +151,7 @@
         </div>
         <div class="footer__copyright">
           <p class="footer__copyright-text">разработано</p>
-          <a class="footer__social-link footer__copyright-link" href=""></a>
+          <a class="footer__social-link footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </footer>
     </div>

@@ -38,14 +38,38 @@
 
 .video__btn--replay{
   background-image: url(../../img/icon-video-replay-mobile.svg);
+  
+  &:hover{
+    background-image: url(../../img/icon-video-replay-mobile-hover.svg);
+  }
+  
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .video__btn--sub{
   background-image: url(../../img/icon-video-subtitles-mobile.svg);
+  
+  &:hover{
+    background-image: url(../../img/icon-video-subtitles-mobile-hover.svg);
+  }
+  
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .video__btn--full{
   background-image: url(../../img/icon-video-fullscreen-mobile.svg);
+  
+  &:hover{
+    background-image: url(../../img/icon-video-fullscreen-mobile-hover.svg);
+  }
+  
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .video__btn--progress{
@@ -118,14 +142,26 @@
   
   .video__btn--replay{
     background-image: url(../../img/icon-video-replay-tablet.svg);
+    
+    &:hover{
+      background-image: url(../../img/icon-video-replay-tablet.svg);
+    }
   }
 
   .video__btn--sub{
     background-image: url(../../img/icon-video-subtitles-tablet.svg);
+      
+    &:hover{
+      background-image: url(../../img/icon-video-subtitles-tablet.svg);
+    }
   }
 
   .video__btn--full{
     background-image: url(../../img/icon-video-fullscreen-tablet.svg);
+    
+    &:hover{
+      background-image: url(../../img/icon-video-fullscreen-tablet.svg);
+    }
   }
   
   .video__btn-line{
@@ -151,6 +187,18 @@
     margin-right: 0px;
     margin-left: 33px;
     } 
+  }
+  
+  .video__btn--replay,
+  .video__btn--sub,
+  .video__btn--full{
+    &:hover{
+      opacity: 0.6;
+    }
+    
+    &:active{
+      opacity: 0.3;
+    }
   }
   
 }

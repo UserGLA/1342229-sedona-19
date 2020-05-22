@@ -1,5 +1,5 @@
 .main{
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
@@ -58,11 +58,11 @@
   font-size: 18px;
   line-height: 55px;
   font-weight: bold;
-}
-
-.main-nav__link:active{
+  
+  &:active{
   color: black;
   opacity: 0.3;
+  }
 }
 
 .main-nav__toggle{
@@ -103,6 +103,7 @@
   width: 100%;
   min-height: 390px;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-color:#c3a296;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -171,7 +172,7 @@
     box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.8);
   }
     
-  .form-main{
+  .main__form{
     padding-bottom: 24px;
   }
   
@@ -276,12 +277,7 @@
     padding-top: 34px
   }
   
-
-  
-  
-    
 }
-
 
 @media (min-width: @desktop_width){
   .main{
@@ -294,7 +290,7 @@
     box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.8);
   }
   
-  .form-main{
+  .main__form{
     padding-bottom: 0px;
   }
   
@@ -310,13 +306,7 @@
   .main-nav__item:last-child{
     padding-left: 140px;
   }
-  
-//  .main-header__logo-link{
-//    width: 100%;
-//    height: auto;
-//  }
 
-  
   .main-bg{
     background-image: url(../../img/bg-back-desktop@1x.jpg);
     height: 520px;

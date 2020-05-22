@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossoriging="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossoriging="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="main">  
@@ -22,7 +24,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84">
+              <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
             </picture>
           </a>
         </div>
@@ -34,7 +36,7 @@
       
         
         <section class="main-bg">
-          <div class="main-bg__img"><img class="main-bg__img-link" src="img/text-sedona-index.svg" width="460" height="351"></div>
+          <div class="main-bg__img"><img class="main-bg__img-link" src="img/text-sedona-index.svg" width="460" height="351" alt="Добро пожаловать, в Седону"></div>
         </section>
         
         <section class="slogan">
@@ -104,7 +106,7 @@
             <li class="advantages__description advantages__description--other">
               <h2 class="advantages__head advantages__head--other">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
               <p class="advantages__number">— №3 —</p>
-              <p class="advantages__text advantages__text--other">ВСЕ интересные места находятся очень близко</p>
+              <p class="advantages__text advantages__text--other">ВСЕ интересные места находятся очень<br class="advantages__text--transfer"> близко</p>
             </li>
             <li class="advantages__description advantages__description--other">
               <h2 class="advantages__head advantages__head--other">КРАСИВАЯ ДОРОГА</h2>
@@ -121,9 +123,8 @@
         
         <section class="search">
           <h2 class="search__head">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-          <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <p class="search__text--tablet">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="button search__button">НАЙТИ ГОСТИНИЦУ</button>
+          <p class="search__text">Укажите предполагаемые даты поездки,<br class="search__text--transfer"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="button search__button" href="" >НАЙТИ ГОСТИНИЦУ</a>
         </section>
         
         <section class="search__map"><img class="search__map__img" src="img/bg-map-mobile@1x.jpg" alt="КАРТА" width="320" height="350"></section>
@@ -140,7 +141,7 @@
         </div>
         <div class="footer__copyright">
           <p class="footer__copyright-text">разработано</p>
-          <a class="footer__social-link footer__copyright-link" href=""></a>
+          <a class="footer__social-link footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </footer>
 

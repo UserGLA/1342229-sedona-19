@@ -10,18 +10,19 @@
 }
 
 .search__text{
-  width: 290px;
+  width: 285px;
   margin: 0 auto;
   padding-bottom: 36px;
   line-height: 24px;
 }
 
-.search__text--tablet{
+.search__text--transfer{
   display: none;
 }
 
 .button{
   margin: 0 auto;
+  text-decoration: none;
   background-color: @color-bl;
   color: white;
   font-family: "PT Sans";
@@ -40,6 +41,10 @@
     background-color: #5496bd;
     color: #94b9d2;
   }
+  
+  &:disabled{
+    background-color: #e5e5e5;
+  }
 }
 
 .search__map__img{
@@ -55,17 +60,15 @@
   
   .search__head{
     font-size: 30px;
+    padding-bottom: 33px;
   }
   
   .search__text{
-    display: none;
+    width: 480px;
+    padding-bottom: 42px;
   }
-  
-  .search__text--tablet{
-    display: block;
-    margin: 0;
-    padding-top: 14px;
-    padding-bottom: 46px;
+  .search__text--transfer{
+  display: block;
   }
   
   .search__button{
@@ -80,12 +83,15 @@
 @media (min-width: @desktop_width){
   
   .search__text{
-    padding: 0 400px;
-    padding-bottom: 40px;
+    padding-bottom: 46px;
   }
   
   .search{
     padding-bottom: 69px; 
+  }
+  
+  .search__head{
+    padding-bottom: 37px;
   }
   
 }
