@@ -4,46 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossoriging="anonymous">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossoriging="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body class="main">  
- 
     <div class="main-wrap">
       <header class="main-header">
         <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">главная</a></li>
+          <button class="main-nav__toogle-close main-nav__toogle-close--closed"></button>
+          <ul class="main-nav__list main-nav__list--open">
+            <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
           </ul>       
-        <div class="main-header__logo">
-          <a>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
-            </picture>
-          </a>
-        </div>
-        <div class="main-header__btn"><button class="main-nav__toggle"></button></div>          
-       </nav>
+          <div class="main-header__logo">
+            <a>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
+              </picture>
+            </a>
+          </div>
+          <div class="main-header__btn"><button class="main-nav__toggle" type="button"></button></div>
+        </nav>
       </header>
-    
       <main>
-      
-        
         <section class="main-bg">
           <div class="main-bg__img"><img class="main-bg__img-link" src="img/text-sedona-index.svg" width="460" height="351" alt="Добро пожаловать, в Седону"></div>
         </section>
-        
         <section class="slogan">
           <h2 class="slogan__header">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
           <p class="slogan__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
         </section>
-      
         <section class="advantages">
           <div class="advantages__description">
             <h2 class="advantages__head">НАСТОЯЩИЙ ГОРОДОК</h2>
@@ -51,7 +50,6 @@
             <p class="advantages__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="advantages__img">
-            
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
@@ -61,10 +59,8 @@
               <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
               <img class="advantages__img-link" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="НАСТОЯЩИЙ ГОРОДОК" width="320" height="255">
             </picture>
-          
           </div>
-        </section>
-        
+        </section> 
         <section class="intro">
           <ul class="intro__list">
             <li class="intro__item">
@@ -81,7 +77,6 @@
             </li>   
           </ul>
         </section>
-      
         <section class="advantages">
           <div class="advantages__description advantages__description--bridge">
             <h2 class="advantages__head advantages__head--bridge">ТАМ ЕСТЬ Мост дьявола</h2>
@@ -100,7 +95,6 @@
             </picture>
           </div>
         </section>
-        
         <section class="advantages advantages--other">
           <ul class="advantages__list">
             <li class="advantages__description advantages__description--other">
@@ -120,15 +114,14 @@
             </li>  
           </ul>
         </section>
-        
         <section class="search">
           <h2 class="search__head">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="search__text">Укажите предполагаемые даты поездки,<br class="search__text--transfer"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="button search__button" href="" >НАЙТИ ГОСТИНИЦУ</a>
         </section>
-        
-        <section class="search__map"><img class="search__map__img" src="img/bg-map-mobile@1x.jpg" alt="КАРТА" width="320" height="350"></section>
-      
+        <section class="search-map">
+          <img class="search-map__img" src="img/bg-map-mobile@1x.jpg" alt="КАРТА" width="320" height="350">
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__contacts"><a class="footer__contacts-link" href="">#visitSEDONA</a></div>
@@ -144,7 +137,34 @@
           <a class="footer__social-link footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </footer>
-
     </div>
+    <script>
+      var mainnav = document.querySelector('.main-nav__list');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var wraptoggle = document.querySelector('.main-header__btn')
+      var navToggleClose = document.querySelector('.main-nav__toogle-close');
+      
+      mainnav.classList.remove('main-nav__list--open');
+
+      navToggle.addEventListener('click', function() {
+        if (mainnav.classList.contains('main-nav__list--closed')) {
+      mainnav.classList.remove('main-nav__list--closed');
+      mainnav.classList.add('main-nav__list--open');
+      navToggleClose.classList.remove('main-nav__toogle-close--closed');
+      navToggle.classList.add('main-nav__toggle--closed')
+      
+        } else {
+      mainnav.classList.add('main-nav__list--closed');
+      mainnav.classList.remove('main-nav__list--open');
+      }
+        
+      navToggleClose.addEventListener('click', function() {
+        mainnav.classList.add('main-nav__list--closed');
+        mainnav.classList.remove('main-nav__list--open');
+        navToggle.classList.remove('main-nav__toggle--closed');
+        navToggleClose.classList.add('main-nav__toogle-close--closed');
+      })
+      });
+    </script>
   </body>
 </html>
