@@ -21,23 +21,23 @@
   border-bottom: 1px solid #e5e5e5;
   padding: 0 20px;
   padding-top: 20px;
-  
+
   &:first-child{
     padding-bottom: 28px;
   }
-  
+
   &:nth-child(2){
     padding-bottom: 23px;
   }
-  
+
   &:nth-child(3){
     padding-bottom: 12px;
   }
-  
+
   &:nth-child(4){
     padding-bottom: 13px;
   }
-  
+
   &:last-child{
     border: none;
     padding-bottom: 40px;
@@ -66,6 +66,7 @@
   height: 57px;
   margin-bottom: 20px;
   margin-left: 13px;
+  font-family: "PT Sans", "Arial";
   font-size: 18px;
   box-sizing: border-box;
   padding-left: 22px;
@@ -86,7 +87,7 @@
 .feedback__info-item{
   list-style: none;
   padding-bottom: 10px;
-  
+
   &:last-child{
     padding-bottom: 5px;
   }
@@ -101,15 +102,17 @@
   position: relative;
   box-sizing: border-box;
   padding-left: 18px;
-  font-size: 17px;
+  font-family: "PT Sans", "Arial";
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .feedback__info-label{
   position: relative;
   padding-left: 23px;
-  
+
   &::after{
-  position: absolute;
+    position: absolute;
     content: '';
     background-color: #e6e6e6;
     width: 16px;
@@ -121,7 +124,6 @@
     left: 100%;
     top: 32px
   }
-  
 }
 
 .feedback__info-label--mail::after{
@@ -136,11 +138,10 @@
   height: 55px;
   font-weight: bold;
   padding-bottom: 15px;
-  
+
   &:last-child{
     padding-bottom: 0px;
   }
-  
 }
 
 .feedback__adventages-item{
@@ -148,7 +149,7 @@
   height: 55px;
   font-weight: bold;
   padding-bottom: 24px;
-  
+
   &:last-child{
     padding-bottom: 0px;
   }
@@ -158,7 +159,6 @@
   font-size: 18px;
   padding-left: 80px;
   text-transform: none;
-
 }
 
 .feedback__radiobox{
@@ -169,24 +169,21 @@
   background-color: #f2f2f2;
   margin-left: -80px;
   margin-top: -15px;
-  
+
   &:hover{
     background-color: #e5e5e5;
   }
-  
+
   &:active{
     background-color: #d5d5d5;
   }
 }
 
-
 .feedback__box{
   margin: 0;
   padding: 0;
   padding-top: 15px;
-
 }
-
 
 .feedback__impression-input:checked + .feedback__radiobox{
   width: 22px;
@@ -224,11 +221,11 @@
   background-color: #f2f2f2;
   margin-left: -80px;
   margin-top: -17px;
-  
+
   &:hover{
     background-color: #e5e5e5;
   }
-  
+
   &:active{
     background-color: #cececd;
     opacity: 0.5;
@@ -256,7 +253,7 @@ feedback__adventages-input:active + .feedback__checkbox{
   height: 160px;
   font-family: "PT Sans", "Arial";
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
@@ -317,25 +314,25 @@ feedback__adventages-input:active + .feedback__checkbox{
     margin: 0 auto;
     padding-bottom: 10px;
   }
-  
+
   .feedback__item{
     width: 50%;
     border: none;
     padding: 0px;
-    
+
     &:first-child{
       width: 266px;
       margin-left: auto;
     }
-    
+
     &:nth-child(2){
       padding-bottom: 4px;
     }
-    
+
     &:nth-child(3){
       order: -1;
       position: relative;
-    
+
       &::after{
         position: absolute;
         content: '';
@@ -346,7 +343,7 @@ feedback__adventages-input:active + .feedback__checkbox{
         background-color: #dbdbdb;
       }
     }
-  
+
     &:nth-child(2),
     &:nth-child(4),
     &:nth-child(5){
@@ -360,54 +357,54 @@ feedback__adventages-input:active + .feedback__checkbox{
     text-align: left;
     padding-bottom: 58px;
   }
-  
+
   .feedback__box{
     padding-bottom: 16px;
   }
-  
+
   .feedback__impression-item{
     padding-bottom: 24px;
   }
-  
+
   .feedback__impression-label{
     padding-left: 76px;
   }
-  
+
   .feedback__present-input{
     width: 178px;
-        
+
     &:hover{
       background-color: #e5e5e5;
     }
-    
+
     &:active{
       outline: 2px solid #e5e5e5;
       background-color: white;
     }
   }
-  
+
   .feedback__present-input--name{
     width: 216px;
   }
-  
+
   .feedback__info-input{
     width: 590px;
-    
+
     &:hover{
       background-color: #e5e5e5;
     }
-    
+
     &:active{
       outline: 2px solid #e5e5e5;
       background-color: white;
     }
   }
-  
+
   .feedback__item-head--info{
     text-align: center;
     padding-bottom: 27px;
     position: relative;
-    
+
     &::before,
     &::after{
       position: absolute;
@@ -418,27 +415,25 @@ feedback__adventages-input:active + .feedback__checkbox{
       left: 0px;
       top: 25%;
     }
-    
+
     &::after{
       left: 80%;
     }
-    
-    
   }
-  
+
   .feedback__info-item{
   list-style: none;
   padding-bottom: 21px;
-  
+
   &:last-child{
     padding-bottom: 22px;
     }
   }
-  
+
   .feedback__item-head--advantages{
     text-align: center;
     position: relative;
-    
+
     &::before,
     &::after{
       position: absolute;
@@ -449,12 +444,12 @@ feedback__adventages-input:active + .feedback__checkbox{
       left: 0px;
       top: 23%;
     }
-    
+
     &::after{
       left: 80%;
     }
   }
-  
+
   .feedback__adventages-list{
     display: flex;
     flex-wrap: wrap;
@@ -462,24 +457,24 @@ feedback__adventages-input:active + .feedback__checkbox{
     margin: 0 auto;
     justify-content: space-between;
   }
-  
+
   .feedback__adventages-item{
     width: 196px;
     padding-bottom: 32px;
-    
+
     &:nth-child(3){
       padding-bottom: 0px;
     }
   }
-  
+
   .feedback__box--adventages{
     padding-top: 0px;
   }
-  
+
   .feedback__item-head--emotion{
     text-align: center;
     position: relative;
-    
+
     &::before,
     &::after{
       position: absolute;
@@ -490,18 +485,20 @@ feedback__adventages-input:active + .feedback__checkbox{
       left: 0px;
       top: 13%;
     }
-    
+
     &::after{
       left: 80%;
     }
   }
+
   .feedback__button-wrap{
     position: relative;
   }
+
   .feedback__button{
     margin-left: 60px;
     padding: 15px 66px;
-    
+
     &::after{
       position: absolute;
       content: '* — обязательные поля';
@@ -511,9 +508,8 @@ feedback__adventages-input:active + .feedback__checkbox{
       text-transform: uppercase;
       left: 71%;
     }
-    
   }
-  
+
   .feedback__popup{
     top: 870px;
     width: 400px;
@@ -521,38 +517,35 @@ feedback__adventages-input:active + .feedback__checkbox{
     transform: translateX(-50%);
     z-index: 3;
   }
-  
+
   .feedback__popup-head{
     font-size: 30px;
     line-height: 26px;
   }
-  
+
   .feedback__popup-text{
     width: 315px;
   }
-  
+
   .feedback__popup-text--on{
     width: 420px;
   }
-  
+
   .feedback__popup--on{
     top: 620px;
     width: 760px;
     z-index: 1;
   }
-  
+
   .feedback__button-wrap{
     background-color: #f2f2f2;
     padding: 50px 0;
   }
-  
+
   .feedback__popup-button--on{
     width: 460px;
   }
-  
-  
 }
-
 
 @media (min-width: @desktop_width){
   .feedback__list{
@@ -560,99 +553,91 @@ feedback__adventages-input:active + .feedback__checkbox{
     margin: 0 auto;
     padding-bottom: 10px;
   }
-  
+
   .feedback__item-head--impression{
     width: 90%;
     text-align: center;
   }
-  
+
   .feedback__present-input{
-    width: 310px;
+    width: 308px;
   }
-  
+
   .feedback__present-input--name{
-    width: 350px;
+    width: 348px;
   }
-  
+
   .feedback__item:first-child{
-    width: 400px;
+    width: 397px;
   }
-  
+
   .feedback__info-list{
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .feedback__info-input{
     width: 257px;
     margin-left: 14px;
   }
-  
+
   .feedback__info-label{
     position: relative;
     padding-left: 0px;
-  
+
   &::after{
     padding: 21px;
     top: -21px;
     }
-  
   }
-  
+
   .feedback__info-item{
     width: 50%;
     padding-top: 33px;
   }
-  
+
   .feedback__info-none{
     display: none;
   }
-  
+
   .feedback__item-head{
     &::before{
       width: 278px;
     }
-    
+
     &::after{
       left: 71.5%;
       width: 278px;
     }
   }
-  
+
   .feedback__adventages-list{
     width: 100%;
   }
-  
+
   .feedback__adventages-item{
     width: auto;
     padding: 0px;
   }
-  
+
   .feedback__button{
     margin-left: 121px;
     padding: 15px 150px;
-    
+
     &::after{
-     left: 916px; 
+      left: 916px;
     }
   }
-  
+
   .feedback{
     padding-bottom: 67px;
   }
-  
+
   .feedback__popup{
     top: 735px;
   }
-  
+
   .feedback__popup--on{
     top: 485px;
   }
-  
 }
-
-
-
-
-
-

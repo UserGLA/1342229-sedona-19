@@ -12,13 +12,13 @@
   font-size: 18px;
   padding-bottom: 16px;
   position: relative;
-  }
+}
 
 .intro__item{
   height: 92px;
   padding-bottom: 39px;
   position: relative;
-  
+
   &:nth-child(2){
     padding-bottom: 20px;
   }
@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
     background-size: 39px;
     content: "";
-    position: absolute; 
+    position: absolute;
     left: -71px;
     top: -30px;
   }
@@ -38,7 +38,6 @@
 
 .intro__item:first-child::before{
   background-image: url(../../img/icon-house-blue.svg);
-  
 }
 
 .intro__item:nth-child(2)::before{
@@ -51,7 +50,7 @@
 }
 
 .intro__text{
-  margin: 0;  
+  margin: 0;
   width: 230px;
 }
 
@@ -60,6 +59,7 @@
 }
 
 @media (min-width: @tablet_width){
+
   .intro__list{
     display: flex;
     padding: 0;
@@ -69,28 +69,28 @@
     margin-right: 47px;
     justify-content: space-between;
   }
-  
+
   .intro__head{
     font-size: 21px;
     padding-bottom: 23px;
   }
-  
+
   .intro__item{
     width: 24%;
     text-align: center;
-    
+
     &:nth-child(2){
       order: 3;
-      
+
       &::before{
         background-size: 77%;
       }
     }
-    
+
     &:last-child{
       width: 23%;
     }
-    
+
     &::before{
       left: 50%;
       transform: translateX(-50%);
@@ -98,35 +98,33 @@
       background-size: 100%;
     }
   }
-    
+
   .intro__text{
-     width: auto;
-    }
-  
+    width: auto;
+  }
 }
 
 @media (min-width: @desktop_width){
+
   .intro__head{
+
     &::before{
       left: 180px;
     }
   }
-  
+
   .intro__list{
     margin: 0px 71px;
   }
-  
+
   .intro__item{
-    
+
     &:last-child{
       width: 28%;
     }
   }
-  
+
   .intro__text-transfer{
     display: block;
   }
-  
 }
-
-

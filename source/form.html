@@ -24,13 +24,13 @@
             <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
           </ul>
           <div class="main-header__logo">
-           <a href="index.html">
-             <picture>
-               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-               <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
-             </picture>
-           </a>
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="main-header__logo-link" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седона">
+              </picture>
+            </a>
           </div>
           <div class="main-header__btn"><button class="main-nav__toggle" type="button"></button></div>
         </nav>
@@ -46,84 +46,90 @@
         <form class="feedback" method="post">
           <section class="feedback__section">
             <ul class="feedback__list">
-             <li class="feedback__item">
-               <h2 class="feedback__item-head">Представьтесь:</h2>
-               <ul class="feedback__present-list">
-                 <li class="feedback__present-item"><label class="feedback__present-label">ИМЯ<sup>*</sup>:<input class="feedback__present-input feedback__present-input--name" aria-label="Ваше имя" placeholder="Петр" required></label></li>
-                 <li class="feedback__present-item"><label class="feedback__present-label">ФАМИЛИЯ<sup>*</sup>:<input class="feedback__present-input" aria-label="Ваша Фамилия" placeholder="Иванов" required></label></li>
-                 <li class="feedback__present-item"><label class="feedback__present-label">ОТЧЕСТВО<sup>*</sup>:<input class="feedback__present-input feedback__present-input--father" aria-label="Ваше отчество" placeholder="Александрович"></label></li>
-               </ul>
-             </li>
-             <li class="feedback__item">
-               <h2 class="feedback__item-head feedback__item-head--info">Контактная информация:</h2>
-               <ul class="feedback__info-list">
-                 <li class="feedback__info-item"><label class="feedback__info-label"><span class="feedback__info-none">Контактный</span> телефон*:
-                   <input class="feedback__info-input" aria-label="Ваш телеофон" type="tel" placeholder="Введите телефон" required></label></li>
-                 <li class="feedback__info-item"><label class="feedback__info-label feedback__info-label--mail">Электронная почта*:<input class="feedback__info-input" aria-label="Ваша электронная почта" type="email" placeholder=" Введите e-mail" required></label></li>
-               </ul>
-             </li>
-             <li class="feedback__item">
-               <h2 class="feedback__item-head feedback__item-head--impression">Ваше Общее впечатление:</h2>
-               <fieldset class="feedback__box">
-                 <ul class="feedback__impression-list">
-                   <li class="feedback__impression-item">
-                     <label class="feedback__impression-label">
-                       <input class="feedback__impression-input visually_hidden" type="radio" name="impression" aria-label="Скорее положительное" checked><span class="feedback__radiobox"></span>Скорее положительное
-                     </label>
-                   </li>
-                   <li class="feedback__impression-item">
-                     <label class="feedback__impression-label">
-                       <input class="feedback__impression-input visually_hidden" type="radio" name="impression" aria-label="Скорее отрицательное"><span class="feedback__radiobox"></span>Скорее отрицательное
-                     </label>
-                   </li>
-                   <li class="feedback__impression-item">
-                     <label class="feedback__impression-label">
-                       <input class="feedback__impression-input visually_hidden" type="radio" name="impression" aria-label="Затрудняюсь ответить"><span class="feedback__radiobox"></span>Затрудняюсь ответить
-                     </label>
-                   </li>
-                 </ul>
-               </fieldset>
-             </li>
-             <li class="feedback__item">
-               <h2 class="feedback__item-head feedback__item-head--advantages">посещенные<br> достопримечательности:</h2>
-               <fieldset class="feedback__box feedback__box--adventages">
-                 <ul class="feedback__adventages-list">
-                   <li class="feedback__adventages-item">
-                     <label class="feedback__adventages-label">
-                       <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Мост дьявола" checked>
-                       <span class="feedback__checkbox"></span>
-                       Мост Дьявола</label>
-                   </li>
-                   <li class="feedback__adventages-item">
-                     <label class="feedback__adventages-label">
-                       <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Гора-колокол" checked>
-                       <span class="feedback__checkbox"></span>
-                       Гора-Колокол</label>
-                   </li>
-                   <li class="feedback__adventages-item">
-                     <label class="feedback__adventages-label">
-                       <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Слай-парк" checked>
-                       <span class="feedback__checkbox"></span>
-                       Слайд-парк</label>
-                   </li>
-                   <li class="feedback__adventages-item">
-                     <label class="feedback__adventages-label">
-                       <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Красные скалы">
-                       <span class="feedback__checkbox"></span>
-                       Красные скалы</label>
-                   </li>
-                 </ul>
-               </fieldset>
-             </li>
-             <li class="feedback__item">
-               <h2 class="feedback__item-head feedback__item-head--emotion">Опишите свои эмоции:</h2>
-               <label class="feedback__emotion-label">
-                 <textarea class="feedback__emotion-input" aria-label="Опишите ваши эмоции" placeholder="Опишите подробно все свои восторги"></textarea>
-               </label>
-             </li>
-           </ul>
-           <button class="button feedback__button">ОТПРАВИТЬ ОТЗЫВ</button>
-          </section>          
+              <li class="feedback__item">
+                <h2 class="feedback__item-head">Представьтесь:</h2>
+                <ul class="feedback__present-list">
+                  <li class="feedback__present-item"><label class="feedback__present-label">ИМЯ<sup>*</sup>:<input class="feedback__present-input feedback__present-input--name" aria-label="Ваше имя" placeholder="Петр" required></label></li>
+                  <li class="feedback__present-item"><label class="feedback__present-label">ФАМИЛИЯ<sup>*</sup>:<input class="feedback__present-input" aria-label="Ваша Фамилия" placeholder="Иванов" required></label></li>
+                  <li class="feedback__present-item"><label class="feedback__present-label">ОТЧЕСТВО<sup>*</sup>:<input class="feedback__present-input feedback__present-input--father" aria-label="Ваше отчество" placeholder="Александрович"></label>
+                  </li>
+                </ul>
+              </li>
+              <li class="feedback__item">
+                <h2 class="feedback__item-head feedback__item-head--info">Контактная информация:</h2>
+                <ul class="feedback__info-list">
+                  <li class="feedback__info-item">
+                    <label class="feedback__info-label"><span class="feedback__info-none">Контактный</span> телефон*:
+                    <input class="feedback__info-input" aria-label="Ваш телеофон" type="tel" placeholder="Введите телефон" required></label>
+                  </li>
+                  <li class="feedback__info-item">
+                    <label class="feedback__info-label feedback__info-label--mail">Электронная почта*:
+                      <input class="feedback__info-input" aria-label="Ваша электронная почта" type="email" placeholder=" Введите e-mail" required>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="feedback__item">
+                <h2 class="feedback__item-head feedback__item-head--impression">Ваше Общее впечатление:</h2>
+                <fieldset class="feedback__box">
+                  <ul class="feedback__impression-list">
+                    <li class="feedback__impression-item">
+                      <label class="feedback__impression-label">
+                        <input class="feedback__impression-input visually_hidden" type="radio" name="impression" aria-label="Скорее положительное" checked><span class="feedback__radiobox"></span>Скорее положительное
+                      </label>
+                    </li>
+                    <li class="feedback__impression-item">
+                      <label class="feedback__impression-label">
+                        <input class="feedback__impression-input visually_hidden" type="radio" name="impression" aria-label="Скорее отрицательное"><span class="feedback__radiobox"></span>Скорее отрицательное
+                      </label>
+                    </li>
+                    <li class="feedback__impression-item">
+                      <label class="feedback__impression-label">
+                        <input class="feedback__impression-input visually_hidden" type="radio" name="impression" aria-label="Затрудняюсь ответить"><span class="feedback__radiobox"></span>Затрудняюсь ответить
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </li>
+              <li class="feedback__item">
+                <h2 class="feedback__item-head feedback__item-head--advantages">посещенные<br> достопримечательности:</h2>
+                <fieldset class="feedback__box feedback__box--adventages">
+                  <ul class="feedback__adventages-list">
+                    <li class="feedback__adventages-item">
+                      <label class="feedback__adventages-label">
+                        <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Мост дьявола" checked>
+                        <span class="feedback__checkbox"></span>Мост Дьявола
+                      </label>
+                    </li>
+                    <li class="feedback__adventages-item">
+                      <label class="feedback__adventages-label">
+                        <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Гора-колокол" checked>
+                        <span class="feedback__checkbox"></span>Гора-Колокол
+                      </label>
+                    </li>
+                    <li class="feedback__adventages-item">
+                      <label class="feedback__adventages-label">
+                        <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Слай-парк" checked>
+                        <span class="feedback__checkbox"></span>Слайд-парк
+                      </label>
+                    </li>
+                    <li class="feedback__adventages-item">
+                      <label class="feedback__adventages-label">
+                        <input class="feedback__adventages-input visually_hidden" type="checkbox" aria-label="Красные скалы">
+                        <span class="feedback__checkbox"></span>Красные скалы
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset></li>
+              <li class="feedback__item">
+                <h2 class="feedback__item-head feedback__item-head--emotion">Опишите свои эмоции:</h2>
+                <label class="feedback__emotion-label">
+                  <textarea class="feedback__emotion-input" aria-label="Опишите ваши эмоции" placeholder="Опишите подробно все свои восторги"></textarea>
+                </label>
+              </li>
+            </ul>
+            <button class="button feedback__button">ОТПРАВИТЬ ОТЗЫВ</button>
+          </section>
           <div class="feedback__popup visually_hidden">
             <div class="feedback_popup-wrap">
               <h2 class="feedback__popup-head">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
@@ -139,9 +145,9 @@
                 <button class="button feedback__popup-button feedback__popup-button--on">ЗАKРЫТЬ ОКНО</button>
               </div>
             </div>
-          </div> 
+          </div>
         </form>
-       </main>
+      </main>
       <footer class="footer">
         <div class="footer__contacts"><a class="footer__contacts-link" href="">#visitSEDONA</a></div>
         <div class="footer__social">
@@ -152,8 +158,8 @@
           </ul>
         </div>
         <div class="footer__copyright">
-         <p class="footer__copyright-text">разработано</p>
-         <a class="footer__social-link footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <p class="footer__copyright-text">разработано</p>
+          <a class="footer__social-link footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </footer>
     </div>
@@ -162,7 +168,7 @@
       var navToggle = document.querySelector('.main-nav__toggle');
       var wraptoggle = document.querySelector('.main-header__btn')
       var navToggleClose = document.querySelector('.main-nav__toogle-close');
-      
+
       mainnav.classList.remove('main-nav__list--open');
 
       navToggle.addEventListener('click', function() {
@@ -171,12 +177,12 @@
       mainnav.classList.add('main-nav__list--open');
       navToggleClose.classList.remove('main-nav__toogle-close--closed');
       navToggle.classList.add('main-nav__toggle--closed')
-      
+
         } else {
       mainnav.classList.add('main-nav__list--closed');
       mainnav.classList.remove('main-nav__list--open');
       }
-        
+
       navToggleClose.addEventListener('click', function() {
         mainnav.classList.add('main-nav__list--closed');
         mainnav.classList.remove('main-nav__list--open');
